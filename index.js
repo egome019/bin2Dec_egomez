@@ -12,16 +12,12 @@ button.addEventListener("click", (event) => {
 
 const convert = () => {
     const number = inputField.value;
-    const numArr = number.split("");
-    console.log(numArr);
+    const binary = parseInt(number, 2);
+    console.log(binary)
     const numList = document.createElement("ul");
-    for (let index = 0; index < numArr.length; index++) {
-        const binary = parseInt(numArr[index], 10);
-        list.innerHTML = binary;
-        
-        // const li = document.createElement("li");
-        // numList.appendChild(li);
-        // list.appendChild(numList);
-    }
+    const li = document.createElement("li");
+    list.appendChild(numList);
+    numList.appendChild(li);
+    return li.innerHTML = binary;
 
 }
