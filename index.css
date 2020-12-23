@@ -31,12 +31,25 @@ body {
 #container div {
   border: solid red 1px;
   padding: 5px;
+  border-radius: 5px;
 }
 
 #row1 {
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 #row2 {
-  margin: 1rem;
+  /* margin: 1rem; */
+  height: 50%;
+}
+
+#dynamic {
+  height: 97%;
+}
+
+#row3 {
+  /* margin: 1rem; */
+  background-color: black;
+  color: antiquewhite;
+  height: 10rem;
 }
